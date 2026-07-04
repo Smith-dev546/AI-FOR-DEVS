@@ -1,0 +1,10 @@
+[INFO] 2025-01-10 Usuario inició sesión correctamente
+[WARNING] 2025-01-10 Intentos de login fallidos: 3
+[ERROR] 2025-01-10 Fallo de conexión a base de datos
+[INFO] 2025-01-10 Tarea programada ejecutada
+[WARNING] 2025-01-10 Alto uso de memoria: 85%
+[INFO] 2025-01-11 Usuario cerró sesión
+[INFO] 2025-01-11 Backups realizados correctamente
+[WARNING] 2025-01-11 Cache del sistema al 90%
+[ERROR] 2025-01-11 Timeout en servicio web
+[INFO] 2025-01-11 Sistema operativo actualizado

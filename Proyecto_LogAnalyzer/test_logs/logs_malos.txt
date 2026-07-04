@@ -1,0 +1,12 @@
+[INFO] 2025-01-10 Usuario inició sesión correctamente
+[ERRO] 2025-01-10 Error de formato en nivel
+[WARNING] Invalid password attempt - sin fecha
+[ERROR] 2025-01-50 Fecha inválida (día 50)
+[INFO] 2025-01-10 
+[WARNING] 
+[INFO] 2025-13-01 Fecha inválida (mes 13)
+[ERROR] 2025-12-31 Mensaje con fecha válida
+Mensaje sin formato ni nivel
+[INFO] 2025-01-10 Mensaje con espacios   extra    
+[WARNING] 2025-01-10
+[ERROR] 2025-01-10   Mensaje con múltiples espacios

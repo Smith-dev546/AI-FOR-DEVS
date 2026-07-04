@@ -1,0 +1,23 @@
+
+---
+
+
+```txt
+# Dependencias del proyecto Log Analyzer
+# Instalar con: pip install -r requirements.txt
+
+# Librerías estándar (no requieren instalación)
+# - datetime
+# - re
+# - sys
+# - os
+# - pathlib
+# - typing
+
+# No se requieren librerías externas para este proyecto
+# Todas las funcionalidades usan la biblioteca estándar de Python
+
+# Opcional: Para pruebas más avanzadas (no necesario para el script)
+# pytest>=7.0.0        # Para pruebas unitarias
+# black>=22.0.0        # Para formateo de código
+# flake8>=4.0.0        # Para linting
