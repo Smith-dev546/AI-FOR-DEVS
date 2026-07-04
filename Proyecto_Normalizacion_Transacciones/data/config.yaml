@@ -1,0 +1,73 @@
+# Configuración de Normalización de Transacciones
+# Decisiones humanas sobre reglas de mapeo
+
+currency_mapping:
+  usd: USD
+  usdollar: USD
+  dollar: USD
+  eur: EUR
+  euro: EUR
+  €: EUR
+  gbp: GBP
+  pound: GBP
+  £: GBP
+
+status_mapping:
+  # Para source_a
+  completed: SUCCESS
+  ok: SUCCESS
+  success: SUCCESS
+  # Para source_b  
+  OK: SUCCESS
+  SUCCESS: SUCCESS
+  # Para source_c
+  success: SUCCESS
+  
+  failed: FAILED
+  error: FAILED
+  ERROR: FAILED
+  invalid: FAILED
+  
+  pending: PENDING
+  processing: PENDING
+  in_progress: PENDING
+
+date_formats:
+  - "%Y-%m-%d %H:%M:%S"
+  - "%d/%m/%Y %H:%M"
+  - "%Y-%m-%dT%H:%M:%SZ"
+  - "%Y-%m-%dT%H:%M:%S.%fZ"
+  - "%d-%m-%Y %H:%M:%S"
+  - "%Y-%m-%d"
+
+sources:
+  source_a:
+    id_field: id
+    amount_field: amount
+    currency_field: currency
+    date_field: timestamp
+    status_field: status
+    amount_type: decimal
+    
+  source_b:
+    id_field: transaction_id
+    amount_field: total
+    currency_field: currency_code
+    date_field: created_at
+    status_field: state
+    amount_type: integer_cents
+    
+  source_c:
+    id_field: ref
+    amount_field: amount
+    currency_field: currency
+    date_field: date
+    status_field: result
+    amount_type: euro_format
+
+# Reglas de validación
+validation_rules:
+  min_amount: 0.01
+  max_amount: 1000000.00
+  allowed_currencies: ["USD", "EUR", "GBP", "MXN", "COP"]
+  accepted_statuses: ["SUCCESS", "FAILED", "PENDING"]

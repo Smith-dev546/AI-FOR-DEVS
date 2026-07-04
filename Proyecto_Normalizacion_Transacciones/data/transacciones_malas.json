@@ -1,0 +1,43 @@
+{
+  "transactions": [
+    {
+      "id": "tx_bad_01",
+      "amount": "abc",
+      "currency": "XYZ",
+      "timestamp": "2025-03-10 14:22:00",
+      "status": "completed"
+    },
+    {
+      "transaction_id": null,
+      "total": 10050,
+      "currency_code": "usd",
+      "created_at": "fecha-invalida",
+      "state": "OK"
+    },
+    {
+      "ref": "",
+      "amount": "€99,99",
+      "date": "2025-03-10T14:22:00Z",
+      "result": "unknown_status"
+    },
+    {
+      "id": "tx_bad_02",
+      "amount": "-10.00",
+      "currency": "USD",
+      "timestamp": "2025-03-11 09:15:30",
+      "status": "pending"
+    },
+    {
+      "transaction_id": 305,
+      "total": 100000000,
+      "currency_code": "XXX",
+      "created_at": "11/03/2025 09:15",
+      "state": "invalid"
+    },
+    {
+      "amount": "€99,99",
+      "date": "2025-03-10T14:22:00Z",
+      "result": "success"
+    }
+  ]
+}

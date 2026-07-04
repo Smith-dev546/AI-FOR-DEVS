@@ -1,0 +1,4 @@
+# Dependencias para el Sistema de Normalización de Transacciones
+# Instalar con: pip install -r requirements.txt
+
+pyyaml>=6.0.0    # Para leer archivos de configuración YAML
