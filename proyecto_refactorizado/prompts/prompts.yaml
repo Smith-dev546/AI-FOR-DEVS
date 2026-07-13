@@ -1,0 +1,46 @@
+# prompts/prompts.yaml
+sentiment:
+  user: |
+    Analiza el sentimiento del siguiente texto en {idioma}:
+    
+    Texto: {texto}
+    
+    Responde SOLO con una palabra: positivo, negativo o neutral.
+  
+  system: |
+    Eres un experto en análisis de sentimiento. Debes ser preciso y objetivo.
+
+sentiment_short:
+  user: |
+    El siguiente texto es muy corto. Analiza su sentimiento en {idioma}:
+    
+    Texto: {texto}
+    
+    Responde SOLO con una palabra: positivo, negativo o neutral.
+
+summarizer:
+  user: |
+    Genera un resumen del siguiente texto en máximo {max_palabras} palabras:
+    
+    {texto}
+    
+    El resumen debe ser conciso y capturar los puntos principales.
+
+keywords:
+  user: |
+    Extrae las {n} palabras clave más importantes del siguiente texto:
+    
+    {texto}
+    
+    Responde SOLO con una lista separada por comas de las palabras clave.
+
+combined_analysis:
+  user: |
+    Basado en el siguiente texto y sus análisis, genera una conclusión integrada:
+    
+    Texto: {texto}
+    
+    Análisis previos:
+    {analisis}
+    
+    Proporciona un análisis coherente que integre todos los aspectos.
